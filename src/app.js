@@ -13,11 +13,6 @@ import './styles/styles.scss';
 
 const store = configureStore();
 
-store.dispatch(addExpense({description: 'Nikola', amount: 100, createdAt: 12345656}));
-store.dispatch(addExpense({description: 'Natasa', amount: 100, createdAt: 12345656}));
-store.dispatch(addExpense({description: 'Gordana', amount: 100, createdAt: 12345656}));
-
-
 const jsx = (
     <Provider store={store}>
         <AppRouter />
