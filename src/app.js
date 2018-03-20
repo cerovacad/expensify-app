@@ -7,8 +7,8 @@ import { addExpense } from './actions/expenses';
 import { setTxtFilter, sortAmount } from './actions/filters';
 import getVisible from './selectors/getVisible';
 
-/////////////////////////////////////
-import 'normalize.css/normalize.css';
+
+// import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
 
