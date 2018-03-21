@@ -88,7 +88,7 @@ class ExpenseForm extends Component {
                               onChange={this.onNoteChange}
                     ></textarea>
 
-                    <button>Add</button>
+                    <button>{this.props.edit == true ? 'Save changes' : 'Add'}</button>
                 </form>
             </div>
         );
