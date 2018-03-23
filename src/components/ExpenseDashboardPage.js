@@ -5,6 +5,7 @@ import ExpensesSummaryComponent from './ExpensesSumaryComponent';
 
 const ExpenseDashboardPage = (props) => (
   <div>
+    <ExpensesSummaryComponent/>
     <ExpenseListFilters />
     <ExpenseList/>
   </div>
