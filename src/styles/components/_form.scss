@@ -1,0 +1,14 @@
+.form {
+  input {
+    font-size: $m;
+  }
+  textarea {
+    font-size: $m;
+  }
+}
+
+.form > * {
+  margin-top: 2rem;
+}
+
+

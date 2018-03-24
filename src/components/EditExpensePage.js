@@ -15,10 +15,14 @@ const EditExpensePage = (props) => {
         props.history.push('/dashboard');
       }}
       />
-      <button onClick={() => {
+      <div className='btn-align content-container'>
+      <button
+        className='btn btn-delete' 
+        onClick={() => {
         props.dispatch(startRmvExpense(props.expense.id));
         props.history.push('/dashboard');
       }}>Remove</button>
+      </div>
     </div>
   );
 };

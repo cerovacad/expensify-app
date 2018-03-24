@@ -1,0 +1,32 @@
+.btn {
+  text-align: center;
+  padding: 1rem 4rem;
+  font-size: $m;
+  background-color: $blue;
+  border: none;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-transparent {
+  text-decoration: none;
+  border: none;
+  font-size: $m;
+  text-align: center;
+  color: white;
+  background-color: fade-out($color: #000000, $amount: 1);
+}
+
+.btn-danger {
+  background-color: $danger;
+}
+
+.btn-delete {
+  background-color: $delete;
+}
+
+.btn-align {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.3rem;
+}

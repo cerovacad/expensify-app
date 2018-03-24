@@ -1,7 +1,16 @@
 // Colors
+$dark-grey: #333;
+$blue: dodgerblue;
+$dark-blue: #364051;
+$light-grey: fade-out($color: #d3d3d3, $amount: .5);
+$danger: fade-out($color: red, $amount: .5);
+$delete: fade-out($color: red, $amount: .2);
 // Spacing
 $s-size: 1.2rem;
 $m-size: 1.6rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;
 $desktop-breakpoint: 45rem;
+//font-size
+$m: 2rem;
+

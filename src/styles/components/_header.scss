@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  background-color: $dark-blue;
+  margin: -0.75rem 0;
+}
+
+.header__title {
+  text-decoration: none;
+  color: white;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
