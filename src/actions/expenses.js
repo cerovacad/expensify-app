@@ -8,7 +8,10 @@ export const addExpense = (expense) => ({
 }); 
 
 export const startAddExpense = (expenseData = {}) => {
-    return (dispatch) => {
+    return (dispatch, getState) => {
+
+        const uid = getState().auth.uid;
+        
         const {
             description = '',
             note = '', 
@@ -18,7 +21,7 @@ export const startAddExpense = (expenseData = {}) => {
 
         const expense = { description, note, amount, createdAt};
 
-        database.ref('expenses').push(expense).then((ref) => {
+        database.ref(`users/${uid}/expenses`).push(expense).then((ref) => {
             dispatch(addExpense({
                 id: ref.key, 
                 ...expense
@@ -34,8 +37,11 @@ export const rmvExpense = (id) => ({
 });
 
 export const startRmvExpense = (id) => {
-    return (dispatch) => {
-        return database.ref('expenses').child(id).remove().then(() => {
+    return (dispatch, getState) => {
+
+        const uid = getState().auth.uid;
+
+        return database.ref(`users/${uid}/expenses/${id}`).remove().then(() => {
             dispatch(rmvExpense(id));
         });
     };
@@ -49,8 +55,11 @@ export const editExpense = (id, editedProps) => ({
 });
 
 export const startEditExpense = (id, editedProps) => {
-    return (dispatch) => {
-        return database.ref('expenses').child(id).update({...editedProps}).then(() => {
+    return (dispatch,  getState) => {
+
+        const uid = getState().auth.uid;
+
+        return database.ref(`users/${uid}/expenses/${id}`).update({...editedProps}).then(() => {
             dispatch(editExpense(id, editedProps));
         });
     };
@@ -62,8 +71,11 @@ export const setExpenses = (expenses) => ({
 });
 
 export const startSetExpenses = () => {
-    return (dispatch) => {
-        return database.ref('expenses').once('value').then((snapshot) => {
+    return (dispatch, getState) => {
+
+        const uid = getState().auth.uid;
+
+        return database.ref(`users/${uid}/expenses`).once('value').then((snapshot) => {
 
             const expenses = [];
 
