@@ -1,5 +1,16 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+  }
+}
+
 .filters > * {
-  margin-top: 3rem;
+  margin-top: $m;
+  @media (min-width: $desktop-breakpoint) {
+    margin-right: $m;
+  }
 }
 
 .filters__input {

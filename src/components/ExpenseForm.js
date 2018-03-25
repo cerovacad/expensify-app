@@ -61,7 +61,7 @@ class ExpenseForm extends Component {
         return (
             <div className='content-container'>
                 <div>  
-                    <form className='form row' onSubmit={this.onSubmit}>
+                    <form className='form' onSubmit={this.onSubmit}>
                         {this.state.erorr && <p>Please provide description and amount</p>}
                         <input type="text" 
                             autoFocus 

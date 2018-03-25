@@ -19,7 +19,7 @@ class ExpenseListFilters extends React.Component {
     render() {
         return (
             <div className='content-container'>
-                <div className='filters row'>
+                <div className='filters'>
                     <input 
                     className='filters__input'
                     type="text" 

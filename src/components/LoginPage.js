@@ -6,7 +6,7 @@ const LoginPage = (props) => (
   <div className='box-layout'>
     <div className='box-layout__box'>
       <h1 className='box-layout__title'>Expensify</h1>
-      <button className='btn' onClick={props.startLogin}>Login</button>
+      <button className='btn-login' onClick={props.startLogin}>Login</button>
     </div>
   </div>
 );

@@ -1,0 +1,32 @@
+.link {
+  text-decoration: none;
+  color: $dark-grey;
+}
+
+.expense-item {
+  border: 1px solid $border;
+  border-top: none;
+  padding: 0.5rem;
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.expense-item:hover {
+    background-color: $xlight-grey;
+}
+
+.expense-item__title {
+  word-break: break-all;
+}
+
+.expense-item__amount {
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+
+.expense-item__date {
+
+}

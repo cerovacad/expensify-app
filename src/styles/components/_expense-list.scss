@@ -1,0 +1,28 @@
+.expenses-list {
+  margin-top: $m;
+  padding-bottom: $m;
+}
+
+.expense-list__header {
+  display: flex;
+  color: $dark-grey;
+  background-color: $xlight-grey;
+  border: 1px solid $border;
+  padding: 0.5rem;
+  font-size: 1.65rem;
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.visible {
+  visibility: hidden;
+  @media (min-width: $desktop-breakpoint) {
+    visibility: visible;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+
+}

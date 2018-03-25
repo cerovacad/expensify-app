@@ -1,9 +1,21 @@
 .form {
+  display: flex;
+  flex-direction: column;
   input {
+    padding-left: 0.25rem;
     font-size: $m;
   }
   textarea {
+    padding-left: 0.25rem;
     font-size: $m;
+  }
+  @media (min-width: $desktop-breakpoint) {
+    input {
+      width: 25%;
+    }
+    textarea {
+      width: 50%;
+    }
   }
 }
 
@@ -11,4 +23,6 @@
   margin-top: 2rem;
 }
 
-
+.add-expense__title {
+  color: $dark-grey;
+}

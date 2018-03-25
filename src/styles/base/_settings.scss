@@ -3,8 +3,10 @@ $dark-grey: #333;
 $blue: dodgerblue;
 $dark-blue: #364051;
 $light-grey: fade-out($color: #d3d3d3, $amount: .5);
+$xlight-grey: fade-out($color: grey, $amount: .95);
 $danger: fade-out($color: red, $amount: .5);
 $delete: fade-out($color: red, $amount: .2);
+$border: fade-out($color: grey, $amount: .8);
 // Spacing
 $s-size: 1.2rem;
 $m-size: 1.6rem;

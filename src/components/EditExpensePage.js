@@ -6,7 +6,8 @@ import {startEditExpense, startRmvExpense} from '../actions/expenses';
 
 const EditExpensePage = (props) => {
   return (
-    <div>
+    <div className='content-container'>
+      <h2 className='add-expense__title'>Edit expense</h2>
       <ExpenseForm
       edit={true}
       expense={props.expense}

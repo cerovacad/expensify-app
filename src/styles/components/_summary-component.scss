@@ -3,4 +3,7 @@
   background-color: $light-grey;
   text-align: center;
   font-size: 2.5rem;
+  @media (min-width: $desktop-breakpoint) {
+    text-align: left;
+  }
 }

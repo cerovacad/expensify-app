@@ -6,6 +6,19 @@
   border: none;
   color: white;
   text-decoration: none;
+  @media (min-width: $desktop-breakpoint) {
+    width: 25%;
+  }
+}
+
+.btn-login {
+  text-align: center;
+  padding: 1rem 4rem;
+  font-size: $m;
+  background-color: $blue;
+  border: none;
+  color: white;
+  text-decoration: none;
 }
 
 .btn-transparent {
